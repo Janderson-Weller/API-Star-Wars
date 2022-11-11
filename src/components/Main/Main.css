@@ -1,0 +1,6 @@
+.section-main, .films, .people, .planets, .planets, .vehicles {
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 6rem);
+    width: 100%;
+}

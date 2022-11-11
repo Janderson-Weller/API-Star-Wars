@@ -1,19 +1,23 @@
-import GetData from '../../Main/getData';
-import '../../../App.css';
-import '../../Main/GridCards/Card.css';
-
 import GridCard from '../../Main/GridCards/Cards';
+import GetData  from '../../Main/getData';
+import Header   from '../../Header/Header';
+import '../../Main/GridCards/Card.css';
+import '../../../App.css';
+
 
 const People = () => {
 
     const data = GetData('https://swapi.dev/api/people');
 
     return (
-        <section className="people">
-            <ul className="grid-list">
-                <GridCard data = {data} category = 'characters' />
-            </ul>
-        </section>
+        <>
+            <Header />
+            <section className="people" style={{marginTop: '3rem'}}>
+                <ul className="grid-list">
+                    <GridCard data = {data} category = 'characters' />
+                </ul>
+            </section>
+        </>
     );
 }
 

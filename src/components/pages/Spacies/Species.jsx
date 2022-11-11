@@ -1,19 +1,23 @@
-import GetData from '../../Main/getData';
-import '../../../App.css';
-import '../../Main/GridCards/Card.css';
-
 import GridCard from '../../Main/GridCards/Cards';
+import GetData  from '../../Main/getData';
+import Header   from '../../Header/Header';
+import '../../Main/GridCards/Card.css';
+import '../../../App.css';
+
 
 const Species = () => {
 
     const data = GetData('https://swapi.dev/api/species');
 
     return (
-        <section className="species">
-            <ul className="grid-list">
-                <GridCard data = {data} category = 'species' />
-            </ul>
-        </section>
+        <>
+            <Header />
+            <section className="species" style={{marginTop: '3rem'}}>
+                <ul className="grid-list">
+                    <GridCard data = {data} category = 'species' />
+                </ul>
+            </section>
+        </>
     );
 }
 
