@@ -1,0 +1,17 @@
+.nav-bar {
+    width: 50%;
+}
+
+.ul-nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li a {
+    padding: .2rem 1rem;
+}
+
+li a:hover {
+    border-bottom: 2px solid #FFF;
+}

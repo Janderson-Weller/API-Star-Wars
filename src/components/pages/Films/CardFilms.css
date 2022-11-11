@@ -1,0 +1,31 @@
+
+.grid-list {
+    display: flex;
+    align-items: center;
+    width: 1020px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    height: 25rem;
+    width: 15rem;
+    background-color: #0E0E0E;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container-img {
+    height: 80%;
+}
+
+.container-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.legend-card {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+}
